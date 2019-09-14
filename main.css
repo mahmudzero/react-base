@@ -48,7 +48,7 @@ body {
   border-radius: 5px;
 
   color: white;
-  background: rgb(117, 208, 219);
+  background: rgb(107, 194, 204);
 
   font-style: italic;
   font-weight: bold;
@@ -98,6 +98,8 @@ body {
   display: flex;
   flex-direction: row;
   flex: 1;
+
+  margin-bottom: 20px;
 
   justify-content: space-between;
   align-items: center;
@@ -153,8 +155,8 @@ body {
   flex: 2;
   flex-wrap: wrap;
   color: white;
-  margin-left: 10px;
-  padding-left: 10px;
+  margin-left: 25px;
+  font-size: 20px;
 }
 
 .page-preview__description-container {
