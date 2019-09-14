@@ -10,10 +10,12 @@ class NavBar extends React.Component {
 
   render() {
     return(
-      <nav className='nav-bar'>
-        <div> ReactBase </div>
-        <div className='logo'> // </div>
-        <div> Mahmud Ahmad </div>
+      <nav className='nav-bar-width'>
+        <div className='nav-bar'>
+          <div> ReactBase </div>
+          <div className='logo'> // </div>
+          <div> Mahmud Ahmad </div>
+        </div>
       </nav>
     );
   };
@@ -35,7 +37,7 @@ class PagePreview extends React.Component {
       return(
         <div className='page-preview'>
           <div className='page-preview__name-image-container'>
-            <div className='page-preview__image-container'>
+            <div className='page-preview__image-container__bordered'>
               { _first_initial }
             </div>
             <div className='page-preview__name'> { this.props.name || this.state.author_name } </div>
@@ -113,13 +115,15 @@ class App extends React.Component {
     return(
       <div className='app'>
         <NavBar />
-        <div className='add-new-dom'> + New DOM </div>
-        {/* as seen here */}
-        {/* { _nav_bar } */}
-        <div className='page-preview-container'>
-          <PagePreview />
-          { _page_prev }
-          { this._render_page_prev() }
+        <div className='app-body'>
+          <div className='add-new-dom'> + New DOM </div>
+          {/* as seen here */}
+          {/* { _nav_bar } */}
+          <div className='page-preview-container'>
+            <PagePreview />
+            { _page_prev }
+            { this._render_page_prev() }
+          </div>
         </div>
       </div>
     );
