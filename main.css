@@ -97,20 +97,35 @@ body {
   align-items: center;
 }
 
-.page-preview__image {
+.page-preview__image-container {
   display: flex;
   flex: 1;
   height: 100px;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 100%;
 
-  background: black;
+  background: linear-gradient(45deg, rgb(45, 42, 46), rgb(42, 39, 43));
+  color: white;
+
+  overflow: hidden;
+}
+
+.page-preview__image {
+  width: auto;
+  min-height: 100%;
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-position: center center;
+
 }
 
 .page-preview__name {
   display: flex;
   flex: 2;
   flex-wrap: wrap;
+  color: white;
 
   padding-left: 10px;
 }
@@ -119,4 +134,5 @@ body {
   display: flex;
   flex: 1;
   align-items: center;
+  text-overflow: ellipsis;
 }
