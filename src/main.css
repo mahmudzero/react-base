@@ -182,6 +182,7 @@ body {
 
   .page-preview-container {
     padding: 0 10px;
+    margin: 0;
     justify-content: space-evenly;
   }
 }
