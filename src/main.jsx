@@ -118,7 +118,9 @@ class App extends React.Component {
       <div className='app'>
         <NavBar />
         <div className='app-body'>
-          <div className='add-new-dom'> + New DOM </div>
+          <div className='add-new-dom-container'>
+            <div className='add-new-dom'> + New DOM </div>
+          </div>
           {/* as seen here */}
           {/* { _nav_bar } */}
           <div className='page-preview-container'>
