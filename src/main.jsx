@@ -1,7 +1,7 @@
 'use strict';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import PagePreview from './components/pagePreview/pagePreview.jsx'
+import PagePreview from './components/pagePreview/pagePreview'
 
 class NavBar extends React.Component {
   constructor(props) {
