@@ -10,7 +10,10 @@ module.exports = {
     filename: './dist/app.js',
     path: path.resolve(__dirname, ''),
   }, resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    alias: {
+      _src: path.resolve(__dirname),
+    }
   }, module: {
     rules: [
       {
