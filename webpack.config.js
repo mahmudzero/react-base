@@ -26,7 +26,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].css',
+              name: 'app.css',
               outputPath: './dist'
             }
           }, {
