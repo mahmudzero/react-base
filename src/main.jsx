@@ -1,28 +1,8 @@
 'use strict';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import PagePreview from '_src/src/components/pagePreview/pagePreview'
-
-class NavBar extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
-  };
-
-  render() {
-    return(
-      <nav className='nav-bar-width'>
-        <div className='nav-bar'>
-          <div> ReactBase </div>
-          <div className='logo'> // </div>
-          <div> Mahmud Ahmad </div>
-        </div>
-      </nav>
-    );
-  };
-};
+import PagePreview from '_src/src/components/pagePreview/pagePreview';
+import NavBar from '_src/src/components/navBar/navBar';
 
 class App extends React.Component {
   constructor(props) {
