@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PagePreview from '_src/src/components/pagePreview/pagePreview';
 import NavBar from '_src/src/components/navBar/navBar';
+import ShadowDOM from '_src/src/components/shadowDom';
 
 class App extends React.Component {
   constructor(props) {
@@ -66,6 +67,9 @@ class App extends React.Component {
             { this._render_page_prev() }
           </div>
         </div>
+        <ShadowDOM mode='open' css='<style>div {color: red;}</style>'>
+          <div> hello world </div>
+        </ShadowDOM>
       </div>
     );
   };
