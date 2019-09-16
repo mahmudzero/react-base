@@ -10,7 +10,7 @@ export default class NavBar extends React.Component {
   };
 
   render() {
-    return(
+    return (
       <nav className='nav-bar-width'>
         <div className='nav-bar'>
           <div> ReactBase </div>
@@ -21,3 +21,4 @@ export default class NavBar extends React.Component {
     );
   };
 };
+

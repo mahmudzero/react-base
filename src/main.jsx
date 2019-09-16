@@ -42,7 +42,7 @@ class App extends React.Component {
         />
       );
     });
-    return ( 
+    return (
       _rendered
     );
   }
@@ -51,7 +51,7 @@ class App extends React.Component {
     // we can render arrays of components
     // const _nav_bar = [<NavBar key='1'/>, <NavBar key='2'/>];
     const _page_prev = [<PagePreview key='1' />, <PagePreview key='2' />, <PagePreview key='3' />, <PagePreview key='4' />];
-    return(
+    return (
       <div className='app'>
         <NavBar />
         <div className='app-body'>

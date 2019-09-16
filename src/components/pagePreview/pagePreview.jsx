@@ -14,7 +14,7 @@ export default class PagePreview extends React.Component {
     const name = this.props.name || this.state.author_name;
     const _first_initial = name[0];
     if(!this.props.img_src) {
-      return(
+      return (
         <div className='page-preview'>
           <div className='page-preview__name-image-container'>
             <div className='page-preview__image-container__bordered'>
@@ -28,7 +28,7 @@ export default class PagePreview extends React.Component {
         </div>
       );
     } else {
-      return(
+      return (
         <div className='page-preview'>
         <div className='page-preview__name-image-container'>
           <div className='page-preview__image-container'>
