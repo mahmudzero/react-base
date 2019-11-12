@@ -67,8 +67,7 @@ class App extends React.Component {
             { this._render_page_prev() }
           </div>
         </div>
-        <ShadowDOM mode='open' css='<style>div {color: red;}</style>'>
-          <div> hello world </div>
+        <ShadowDOM mode='open' css='div { color: red; }' html='<div> hello world </div>' js='console.log("shadowDomJS")'>
         </ShadowDOM>
       </div>
     );
