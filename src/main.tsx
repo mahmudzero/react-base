@@ -1,8 +1,12 @@
 'use strict';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
-function App() {
+type AppProps = {
+  name: string,
+};
+
+function App({name} : AppProps) {
   /**
    * example of using state
    */
@@ -28,21 +32,22 @@ function App() {
         justifyContent: "center",
         height: "100vh",
         width: "100vw",
+        backgroundColor: "rgb(128, 180, 210)",
       }}
       className='app'
     >
       <div
         style={{
-          color: "rgb(128, 180, 210)",
+          color: "rgb(255, 255, 255)",
           fontSize: "28px"
         }}
-    >
-        Starter Project
+      >
+        {name}
       </div>
     </div>
   );
 
 }
 
-const _app = <App name='App'/* props */ />;
+const _app = <App name="Starter Project"/>;
 ReactDOM.render(_app, document.getElementById('root'));

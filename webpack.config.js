@@ -4,26 +4,23 @@ module.exports = {
   mode: 'development',
   entry: [
     'babel-polyfill',
-    './src/main.jsx',
+    './src/main.tsx',
     './src/main.css',
   ], output: {
     filename: './dist/app.js',
     path: path.resolve(__dirname, ''),
   }, resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
       _src: path.resolve(__dirname),
     }
   }, module: {
     rules: [
       {
-        test: /\.js$|.jsx$/,
+        test: /\.(ts|js)x?$/,
         exclude: /(node_modules)/,
         use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-          }
+          loader: 'ts-loader'
         }
       }, {
         test: /\.css$/,
