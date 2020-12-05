@@ -34,7 +34,7 @@ function App({name} : AppProps) {
         width: "100vw",
         backgroundColor: "rgb(128, 180, 210)",
       }}
-      className='app'
+      className='app no-select'
     >
       <div
         style={{
