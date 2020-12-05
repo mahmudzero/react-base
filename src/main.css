@@ -1,14 +1,14 @@
 :root {
-	--main-bg: rgb(255, 255, 255);
+  --main-bg: rgb(255, 255, 255);
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	font-family: monospace;
-	background: var(--main-bg);
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background: var(--main-bg);
 }
 
 .app {
-	margin: 0 auto;
+  margin: 0 auto;
 }
