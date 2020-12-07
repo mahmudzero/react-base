@@ -10,7 +10,11 @@ function App({name} : AppProps) {
   /**
    * example of using state
    */
-  const [ex_state, set_ex_state] = React.useState({});
+  interface ExStateType {
+    count : number
+  }
+
+  const [ex_state, set_ex_state] = React.useState<ExStateType>({count: 0});
 
   /**
    * init hook
@@ -23,6 +27,16 @@ function App({name} : AppProps) {
     },
     [] // useEffect is called when things passed into the dependency list change value
   );
+
+  function counter() : number {
+    set_ex_state(
+      {
+        count: ex_state.count+1
+      }
+    );
+    return val++;
+  }
+  let val : number = 0;
 
   return (
     <div
@@ -42,7 +56,7 @@ function App({name} : AppProps) {
           fontSize: "28px"
         }}
       >
-        {name}
+        {name} Value: {ex_state.count} <button onClick={() => counter()}> BUTTON </button>
       </div>
     </div>
   );
