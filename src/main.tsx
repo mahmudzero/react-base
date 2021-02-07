@@ -38,10 +38,26 @@ function App({name} : AppProps) {
   }
   let val : number = 0;
 
+  function load_iframe() : null {
+    document.getElementById('iframe_root').style.display = 'block';
+    return null;
+  }
+
+  function load_localstorage() : null {
+    window.localStorage.setItem('foo', 'bar');
+    return null;
+  }
+
+  function log_localstorage() : null {
+    console.log('localstorage: ', window.localStorage.getItem('foo'));
+    return null;
+  }
+
   return (
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
         height: "100vh",
@@ -57,6 +73,33 @@ function App({name} : AppProps) {
         }}
       >
         {name} Value: {ex_state.count} <button onClick={() => counter()}> BUTTON </button>
+      </div>
+      <div
+        style={{
+          color: "rgb(255, 255, 255)",
+          fontSize: "28px"
+        }}
+      >
+        <button onClick={() => load_iframe()}> trigger iframe </button>
+      </div>
+      <div
+        style={{
+          color: "rgb(255, 255, 255)",
+          fontSize: "28px"
+        }}
+      >
+        <button onClick={() => load_localstorage()}> load localstorage </button>
+      </div>
+      <div
+        style={{
+          color: "rgb(255, 255, 255)",
+          fontSize: "28px"
+        }}
+      >
+        <button onClick={() => log_localstorage()}> log localstorage </button>
+      </div>
+      <div>
+        <iframe sanbox="" style={{display: 'none'}} id='iframe_root' src='/new_routesasdf'></iframe>
       </div>
     </div>
   );
