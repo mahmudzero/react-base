@@ -99,7 +99,7 @@ function App({name} : AppProps) {
         <button onClick={() => log_localstorage()}> log localstorage </button>
       </div>
       <div>
-        <iframe sanbox="" style={{display: 'none'}} id='iframe_root' src='/new_routesasdf'></iframe>
+        <iframe sanbox="" style={{display: 'none'}} id='iframe_root' src='http://frontend.local.com/new_routes'></iframe>
       </div>
     </div>
   );
